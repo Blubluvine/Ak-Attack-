@@ -1,7 +1,17 @@
+:root {
+    --color-amarillo: #FFEC00;
+    --color-rosa: #D05298;
+    --color-navy: #0D0D49;
+    --color-blanco: #f7f7f7;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @font-face {
@@ -12,30 +22,38 @@
 }
 
 body {
-    background-color: #0D0D49;
-    background-image: url(/images/fondo_inicio-fin.png);
+    background-color: var(--color-navy);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/fondo_inicio-fin.png);
     background-size: contain;
-    color: rgb(255, 255, 255);
+    color: var(--color-blanco);
 }
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
 
 h1 {
     font-size: 100px;
     text-align: center;
     padding: 50px;
 }
+
 .content {
     padding: 30px;
     font-size: 25px;
 }
 
 header {
-    background-color:#D05298;
+    background-color: #f7f7f713;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 16px;
     height: 60px;
     font-size: 25px;
+    backdrop-filter: blur(3px);
 }
 
 header nav ul {
@@ -46,11 +64,10 @@ header nav ul {
 
 header nav a {
     text-decoration: none;
-    color: #FFEC00;
+    color: var(--color-amarillo);
     font-weight: bold;
 }
 
 header nav a:hover {
-    color: #0D0D49;
+    color: var(--color-navy);
 }
-
