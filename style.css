@@ -33,11 +33,26 @@ body {
     height: auto;
 }
 
+.logo_principal{
+    width: 100px;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
 
 h1 {
-    font-size: 100px;
+    font-size: 44px;
     text-align: center;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    color: var(--color-amarillo);
 }
 
 .content {
@@ -59,15 +74,26 @@ header {
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 44px;
 }
 
 header nav a {
     text-decoration: none;
     color: var(--color-amarillo);
     font-weight: bold;
+    word-spacing: -5px;
 }
 
 header nav a:hover {
-    color: var(--color-navy);
+    color: var(--color-rosa);
+}
+
+.video{
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 60px;
 }
