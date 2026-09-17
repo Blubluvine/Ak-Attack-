@@ -55,7 +55,7 @@ h1 {
     color: var(--color-amarillo);
 }
 
-.content {
+section {
     padding: 30px;
     font-size: 25px;
 }
