@@ -5,29 +5,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ak Attack!</title>
+    <link rel="icon" type="image/icon" href="images/marciano.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+
+        <div class="logo">
+            <a href="AkAttack.html">
+                <img src="images/ak_attack.png" alt="Ak Attack!">
+            </a>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="AkAttack.html">Ak Attack!</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="AkAttack.html">Inicio</a></li>
+                <li><a href="#Akk_Attack">Ak Attack!</a></li>
+                <li><a href="#proceso">Cómo se hizo</a></li>
+                <li><a href="#about">Conócenos</a></li>
             </ul>
         </nav>
     </header>
-    
-    <h1>Ak Attack!</h1>
 
-    <div class="content">
-        <p>
-            ¡Bienvenido a Ak Attack! Este es un juego de acción y aventura donde te sumergirás en un mundo lleno de
-            desafíos y enemigos. Prepárate para enfrentarte a hordas de enemigos, superar obstáculos y descubrir
-            secretos ocultos mientras avanzas en tu misión. ¡Buena suerte!
-        </p>
-    </div>
+    <main>
+        <section id="Akk_Attack">
+            <div class="logo_principal">
+                <img src="images/ak_attack.png" alt="Ak Attack! - Logo del videojuego.">
+            </div>
+
+            <div class="video"> <video width="100%" controls poster="images/fondo_juego.png">
+                    <source src="video/ak_attack_teaser.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="content">
+                <h1>¡Bienvenido a Ak Attack!,<br> tu videojuego de marcianitos!</h1>
+                <div class="intro">
+                    <h3>¡ALERTA EN EL SECTOR 7!</h3>
+                    <p>
+                        Año 2142.<br>Una horda alienígena desconocida ha irrumpido en las fronteras de la Tierra.
+                        Organizados en
+                        formaciones de ataque implacables, sus escuadrones descienden sin tregua hacia nuestra atmósfera
+                        mientras despliegan un fuego cruzado devastador.<br>
+
+                        Eres el último piloto en pie. A bordo de tu nave de combate, la última defensa del planeta, tu
+                        misión es
+                        clara: esquivar los proyectiles enemigos, calcular cada disparo y exterminar hasta al último
+                        marciano
+                        antes de que toquen tierra firme.<br>
+
+                        Prepara los mandos, afina tu puntería y no dejes ni un solo invasor con vida.<br>
+                        ¡El destino de la humanidad está en tus manos!
+                    </p>
+                    <div class="boton">
+                        <a href="https://github.com/AltXio/AkAttak_Game" target="_blank"
+                            rel="noopener noreferrer">JUGAR</a>
+                    </div>
+                </div>
+
+                <div class="protagonistas">
+                    <h2>Los protagonistas</h2>
+                    <div class="personajes">
+
+                        <div class="carta">
+                            <h3>La defensora</h3>
+                            <h4>Pium-Pium</h4>
+                            <div>
+                                <img src="images/pium-pium.png"
+                                    alt="Nave espacial que defiende la tierra de los invasores.">
+                            </div>
+                            <p>Es la última línea de defensa de la Tierra frente a la invasión. Un prototipo de alta
+                                agilidad
+                                equipado con un cañón de plasma de disparo rápido. Aunque cuenta con gran movilidad para
+                                esquivar el fuego cruzado, no resistirá demasiados impactos directos.</p>
+                        </div>
+
+                        <div class="carta">
+                            <h3>El invasor</h3>
+                            <h4>Peón de la horda</h4>
+                            <div>
+                                <img src="images/marciano.png" alt="Marciano invasor, peón de la horda.">
+                            </div>
+                            <p>Es la última línea de defensa de la Tierra frente a la invasión. Un prototipo de alta
+                                agilidad
+                                equipado con un cañón de plasma de disparo rápido. Aunque cuenta con gran movilidad para
+                                esquivar el fuego cruzado, no resistirá demasiados impactos directos.</p>
+
+                        </div>
+
+                        <div class="carta">
+                            <h3>El gran líder</h3>
+                            <h4>Xor-Gath, el Destructor</h4>
+                            <div>
+                                <img src="images/marciano_boss.png" alt="">
+                            </div>
+                            <p>El comandante supremo de la flota enemiga. Un espécimen más grande, letal y resistente
+                                que
+                                comanda la invasión desde la retaguardia. Solo entra en combate cuando sus tropas han
+                                sido
+                                mermadas, alterando el ritmo del ataque con proyectiles pesados y patrones de disparo
+                                impredecibles.</p>
+                        </div>
+                    </div>
+
+                    <div class="manual">
+                        <h2>Cómo jugar</h2>
+                        <p>Usa las flechas de dirección Izquierda y Derecha para desplazar tu nave por
+                            la parte inferior de la pantalla y presiona la Barra Espaciadora para disparar tu cañón de
+                            plasma.<br>Tu objetivo es eliminar a todas las oleadas de invasores antes de que alcancen tu
+                            posición o agoten tus vidas con sus disparos. Mantente en constante movimiento, esquiva el
+                            fuego
+                            enemigo y destruye a todos los invasores que van a por ti.<br>
+                            ¡Buena suerte!
+                        </p>
+                    </div>
+
+                    <div class="tecnologias">
+                        <h2>Desarrollo y tecnología</h2>
+                        <p>El juego ha sido desarrollado íntegramente en Java, haciendo uso de la biblioteca gráfica
+                            Swing
+                            para la construcción de la interfaz y la gestión de la pantalla. Mediante el uso de
+                            componentes
+                            como JPanel y la renderización en tiempo real con Graphics2D, se controlan de forma fluida
+                            los
+                            movimientos de la nave, la generación de las hordas enemigas y la detección de colisiones
+                            mediante bucles de animación (game loops) programados a medida.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso">
+
+            <div class="proceso">
+                <h2>Cómo se hizo</h2>
+                <p>El proyecto cobra vida gracias al trabajo conjunto de un equipo de cuatro desarrolladores (tres
+                    perfiles de DAW y uno de DAM) enfrentándonos al reto de crear un juego funcional en solo dos días.
+                    Comenzamos con una sesión de brainstorming en la que barajamos distintas ideas de juegos, aunque
+                    finalmente ganaron los marcianitos, por su fácil desarrollo y su estética impactante.</p>
+                <div>
+
+                    <img src="images/concepto.png" alt="Primer concepto estético del proyecto">
+                </div>
+
+                <p>A partir de ahí, el diseño artístico fluyó de manera natural: realizamos una primera fase de bocetos
+                    a mano, puliendo y corrigiendo en equipo lo que no terminaba de convencer, para finalmente pasarlos
+                    a limpio y darles el color definitivo que da personalidad a nuestro universo alienígena.</p>
+                <div class="galeria">
+                    <img src="images/Bocetos.png" alt="Bocetos del proyecto.">
+                    <img src="images/Inspo.png" alt="Bocetos del proyecto.">
+                    <img src="images/Bocetos-2.png" alt="Bocetos del proyecto.">
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <img src="images/ak_attack.png" alt="Logo del videojuego">
+            <p>&copy; 2026 Ak-Attack! Todos los derechos reservados.</p>
+            <p class="autores">Flavia Cruz - Andrés Gómez - Jaume Redondo - Abigail Rabal</p>
+        </footer>
+
+
+
+
+
+    </main>
 </body>
 
 </html>

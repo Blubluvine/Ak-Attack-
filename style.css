@@ -1,56 +1,271 @@
+:root {
+    --color-amarillo: #FFEC00;
+    --color-rosa: #D05298;
+    --color-navy: #0D0D49;
+    --color-blanco: #f7f7f7;
+    --color-transparente: #f7f7f722;
+    --color-blanco_transparente: #f7f7f742;
+    --color-rosa_transparente: #d0529731;
+    --color-amarillo_transparente: #ffee0022;
+
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @font-face {
     font-family: 'Aero';
-    src: url('/tipo/AeroviasBrasilNF.ttf') format('truetype');
+    src: url('tipo/AeroviasBrasilNF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    background-color: #0D0D49;
-    background-image: url(/images/fondo_inicio-fin.png);
+    background-color: var(--color-navy);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/fondo_inicio-fin.png);
     background-size: contain;
-    color: rgb(255, 255, 255);
+    color: var(--color-blanco);
 }
 
-h1 {
-    font-size: 100px;
-    text-align: center;
-    padding: 50px;
+.logo img {
+    width: 200px;
+    height: auto;
 }
-.content {
+
+.logo_principal {
+    width: 100px;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-size: 44px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    color: var(--color-amarillo);
+}
+
+h3 {
+    margin-bottom: 40px;
+}
+
+section {
     padding: 30px;
     font-size: 25px;
 }
 
 header {
-    background-color:#D05298;
+    background-color: #f7f7f713;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 16px;
     height: 60px;
     font-size: 25px;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 44px;
 }
 
 header nav a {
     text-decoration: none;
-    color: #FFEC00;
+    color: var(--color-amarillo);
     font-weight: bold;
+    word-spacing: -5px;
 }
 
 header nav a:hover {
-    color: #0D0D49;
+    color: var(--color-rosa);
 }
 
+.video {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 1100px;
+    font-weight: 500;
+    line-height: 2.5rem;
+    background-color: var(--color-transparente);
+    padding: 44px;
+    border-radius: 24px;
+    border: 4px solid var(--color-rosa);
+    font-weight: 500;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.boton a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: var(--color-amarillo);
+    padding: 8px 44px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-rosa);
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: var(--color-amarillo);
+    margin-bottom: 60px;
+}
+
+.protagonistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 1100px;
+    font-weight: 500;
+    line-height: 2.5rem;
+    padding: 44px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    text-align: justify;
+
+}
+
+.personajes {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.personajes img {
+    width: 300px;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 32px;
+    background-color: var(--color-blanco_transparente);
+    border-radius: 16px;
+    border: 4px solid var(--color-rosa);
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+p {
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: var(--color-amarillo);
+    margin-bottom: 1px;
+}
+
+h4 {
+    color: var(--color-blanco);
+}
+
+.manual,
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proceso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 1100px;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 60px;
+    text-align: justify;
+    background-color: var(--color-transparente);
+    border-radius: 24px;
+    padding: 24px;
+    border: 4px solid var(--color-rosa);
+}
+
+.proceso img {
+    width: 300px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 32px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color-navy);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+footer img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+footer p {
+    color: var(--color-rosa);
+    margin-bottom: 30px;
+}
+
+.autores {
+    color: var(--color-amarillo);
+    margin-bottom: 0px;
+}
